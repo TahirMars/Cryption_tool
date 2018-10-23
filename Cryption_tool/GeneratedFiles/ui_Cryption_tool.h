@@ -24,7 +24,7 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTextBrowser>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -53,12 +53,12 @@ public:
     QLabel *label_19;
     QSpacerItem *horizontalSpacer_26;
     QHBoxLayout *horizontalLayout_18;
-    QTextBrowser *textBrowser_11;
+    QTextEdit *textEdit;
     QVBoxLayout *verticalLayout_13;
     QPushButton *pushButton_16;
     QPushButton *pushButton_17;
     QPushButton *pushButton_18;
-    QTextBrowser *textBrowser_12;
+    QTextEdit *textEdit_2;
     QWidget *tab;
     QWidget *layoutWidget_3;
     QVBoxLayout *verticalLayout_8;
@@ -74,12 +74,12 @@ public:
     QLabel *label_13;
     QSpacerItem *horizontalSpacer_14;
     QHBoxLayout *horizontalLayout_12;
-    QTextBrowser *textBrowser_7;
+    QTextEdit *textEdit_3;
     QVBoxLayout *verticalLayout_9;
     QPushButton *pushButton_10;
     QPushButton *pushButton_11;
     QPushButton *pushButton_12;
-    QTextBrowser *textBrowser_8;
+    QTextEdit *textEdit_4;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -166,10 +166,10 @@ public:
         horizontalLayout_18 = new QHBoxLayout();
         horizontalLayout_18->setSpacing(6);
         horizontalLayout_18->setObjectName(QStringLiteral("horizontalLayout_18"));
-        textBrowser_11 = new QTextBrowser(layoutWidget_4);
-        textBrowser_11->setObjectName(QStringLiteral("textBrowser_11"));
+        textEdit = new QTextEdit(layoutWidget_4);
+        textEdit->setObjectName(QStringLiteral("textEdit"));
 
-        horizontalLayout_18->addWidget(textBrowser_11);
+        horizontalLayout_18->addWidget(textEdit);
 
         verticalLayout_13 = new QVBoxLayout();
         verticalLayout_13->setSpacing(6);
@@ -192,10 +192,10 @@ public:
 
         horizontalLayout_18->addLayout(verticalLayout_13);
 
-        textBrowser_12 = new QTextBrowser(layoutWidget_4);
-        textBrowser_12->setObjectName(QStringLiteral("textBrowser_12"));
+        textEdit_2 = new QTextEdit(layoutWidget_4);
+        textEdit_2->setObjectName(QStringLiteral("textEdit_2"));
 
-        horizontalLayout_18->addWidget(textBrowser_12);
+        horizontalLayout_18->addWidget(textEdit_2);
 
 
         verticalLayout_12->addLayout(horizontalLayout_18);
@@ -266,10 +266,10 @@ public:
         horizontalLayout_12 = new QHBoxLayout();
         horizontalLayout_12->setSpacing(6);
         horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
-        textBrowser_7 = new QTextBrowser(layoutWidget_3);
-        textBrowser_7->setObjectName(QStringLiteral("textBrowser_7"));
+        textEdit_3 = new QTextEdit(layoutWidget_3);
+        textEdit_3->setObjectName(QStringLiteral("textEdit_3"));
 
-        horizontalLayout_12->addWidget(textBrowser_7);
+        horizontalLayout_12->addWidget(textEdit_3);
 
         verticalLayout_9 = new QVBoxLayout();
         verticalLayout_9->setSpacing(6);
@@ -292,10 +292,10 @@ public:
 
         horizontalLayout_12->addLayout(verticalLayout_9);
 
-        textBrowser_8 = new QTextBrowser(layoutWidget_3);
-        textBrowser_8->setObjectName(QStringLiteral("textBrowser_8"));
+        textEdit_4 = new QTextEdit(layoutWidget_3);
+        textEdit_4->setObjectName(QStringLiteral("textEdit_4"));
 
-        horizontalLayout_12->addWidget(textBrowser_8);
+        horizontalLayout_12->addWidget(textEdit_4);
 
 
         verticalLayout_8->addLayout(horizontalLayout_12);
@@ -317,6 +317,10 @@ public:
         Cryption_toolClass->setStatusBar(statusBar);
 
         retranslateUi(Cryption_toolClass);
+        QObject::connect(pushButton_16, SIGNAL(clicked()), Cryption_toolClass, SLOT(encryption()));
+        QObject::connect(pushButton_18, SIGNAL(clicked()), textEdit_2, SLOT(clear()));
+        QObject::connect(pushButton_17, SIGNAL(clicked()), Cryption_toolClass, SLOT(decryption()));
+        QObject::connect(pushButton_18, SIGNAL(clicked()), textEdit, SLOT(clear()));
 
         tabWidget->setCurrentIndex(0);
 

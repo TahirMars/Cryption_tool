@@ -1,7 +1,7 @@
 #pragma once
-
 #include <QtWidgets/QMainWindow>
 #include "ui_Cryption_tool.h"
+#include <string>
 
 class Cryption_tool : public QMainWindow
 {
@@ -12,4 +12,9 @@ public:
 
 private:
 	Ui::Cryption_toolClass ui;
+
+private slots:
+	void encryption();
+	void decryption();
+
 };

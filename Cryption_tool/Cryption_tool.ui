@@ -149,7 +149,7 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_18">
             <item>
-             <widget class="QTextBrowser" name="textBrowser_11"/>
+             <widget class="QTextEdit" name="textEdit"/>
             </item>
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_13">
@@ -177,7 +177,7 @@
              </layout>
             </item>
             <item>
-             <widget class="QTextBrowser" name="textBrowser_12"/>
+             <widget class="QTextEdit" name="textEdit_2"/>
             </item>
            </layout>
           </item>
@@ -298,7 +298,7 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
-             <widget class="QTextBrowser" name="textBrowser_7"/>
+             <widget class="QTextEdit" name="textEdit_3"/>
             </item>
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_9">
@@ -326,7 +326,7 @@
              </layout>
             </item>
             <item>
-             <widget class="QTextBrowser" name="textBrowser_8"/>
+             <widget class="QTextEdit" name="textEdit_4"/>
             </item>
            </layout>
           </item>
@@ -362,5 +362,74 @@
  <resources>
   <include location="Cryption_tool.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_16</sender>
+   <signal>clicked()</signal>
+   <receiver>Cryption_toolClass</receiver>
+   <slot>encryption()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>470</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>472</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>textEdit_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>469</x>
+     <y>486</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>573</x>
+     <y>521</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>Cryption_toolClass</receiver>
+   <slot>decryption()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>451</x>
+     <y>379</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>470</x>
+     <y>623</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>textEdit</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>442</x>
+     <y>484</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>333</x>
+     <y>525</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>encryption()</slot>
+  <slot>decryption()</slot>
+ </slots>
 </ui>

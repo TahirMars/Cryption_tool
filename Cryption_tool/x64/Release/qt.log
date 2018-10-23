@@ -1,3 +1,3 @@
-Cryption_tool.qrc|"D:\QT_lianxi\Cryption_tool\Cryption_tool\Cryption_tool\Cryption_tool.qrc" -o ".\GeneratedFiles\qrc_Cryption_tool.cpp" --name Cryption_tool
-Cryption_tool.ui|"D:\QT_lianxi\Cryption_tool\Cryption_tool\Cryption_tool\Cryption_tool.ui" -o ".\GeneratedFiles\ui_Cryption_tool.h"
+Cryption_tool.qrc|"D:\Qt_Encryption_tool\Cryption_tool\Cryption_tool\Cryption_tool.qrc" -o ".\GeneratedFiles\qrc_Cryption_tool.cpp" --name Cryption_tool
+Cryption_tool.ui|"D:\Qt_Encryption_tool\Cryption_tool\Cryption_tool\Cryption_tool.ui" -o ".\GeneratedFiles\ui_Cryption_tool.h"
 Cryption_tool.h|"D:\Qt_Encryption_tool\Cryption_tool\Cryption_tool\Cryption_tool.h" -o ".\GeneratedFiles\Release\moc_Cryption_tool.cpp" "-I.\GeneratedFiles" "-I." "-ID:\Qt_5.9.2\5.9.2\msvc2017_64\include" "-I.\GeneratedFiles\Release" "-ID:\Qt_5.9.2\5.9.2\msvc2017_64\include\QtCore" "-ID:\Qt_5.9.2\5.9.2\msvc2017_64\include\QtGui" "-ID:\Qt_5.9.2\5.9.2\msvc2017_64\include\QtANGLE" "-ID:\Qt_5.9.2\5.9.2\msvc2017_64\include\QtWidgets" -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
