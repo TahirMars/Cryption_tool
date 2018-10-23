@@ -1,0 +1,76 @@
+QLabel, QPushButton, 
+QGroupBox, QComboBox { 
+
+	font-family: ¡°Segoe UI¡±; 
+
+}
+
+
+QPushButton {
+
+	border-radius: 4px;
+        border: none;
+        width: 75px;
+        height: 25px;
+	border-style: outset;
+
+}
+
+
+QPushButton:enabled {
+        
+	background: rgb(68, 69, 73);
+	color: white;
+
+}
+
+QPushButton:!enabled {
+        
+	background: rgb(100, 100, 100);
+	color: rgb(200, 200, 200);
+
+}
+
+QPushButton:enabled:hover{
+        
+	background: rgb(85, 85, 85);
+
+}
+
+QPushButton:enabled:pressed{
+        
+	background: rgb(80, 80, 80);
+
+}
+
+QLineEdit{
+      border: 1px solid #32435E;
+      border-radius: 3px;
+      background:white;
+      selection-background-color: #0A246A;
+}
+ 
+QTextEdit{
+      border: 1px solid #32435E;
+      border-radius: 3px;
+      background:white;
+      selection-background-color: #0A246A;
+}
+ 
+
+
+QLabel{
+      border: 1px solid #32435E;
+      border-radius: 3px;
+      color: white;
+      background: rgb(68, 69, 73);
+}
+QGroupBox{
+      border: 1px solid #32435E;
+      border-radius: 3px;
+}
+
+QTabWidget{
+
+      background: rgb(181, 181, 181);
+}

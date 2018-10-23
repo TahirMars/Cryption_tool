@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/Cryption_tool">
+        <file>test.qss</file>
+    </qresource>
+</RCC>
